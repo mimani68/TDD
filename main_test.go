@@ -1,6 +1,16 @@
 package main
 
-import "testing"
+import (
+	"os"
+	"testing"
+)
+
+func TestMain(m *testing.M) {
+	// setup()
+	code := m.Run()
+	// tearDown()
+	os.Exit(code)
+}
 
 //
 // go run test -v
